@@ -248,7 +248,7 @@ def exportar_agendamentos_excel():
         messagebox.showinfo("Informação", "Nenhum agendamento encontrado para exportar.")
         return
 
-    colunas = ["ID", "Cliente", "Serviço", "Data e Hora", "Status"]
+    colunas = ["ID", "Cliente", "Serviço", "Preço", "Data e Hora", "Status"]
     
     df = pd.DataFrame(agendamentos, columns=colunas)
 
